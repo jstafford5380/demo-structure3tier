@@ -1,0 +1,14 @@
+C:\source\scrap\Structure3TierDemo\src\Structure3TierDemo.Api\bin\Debug\netcoreapp2.2\Structure3TierDemo.Api.deps.json
+C:\source\scrap\Structure3TierDemo\src\Structure3TierDemo.Api\bin\Debug\netcoreapp2.2\Structure3TierDemo.Api.runtimeconfig.json
+C:\source\scrap\Structure3TierDemo\src\Structure3TierDemo.Api\bin\Debug\netcoreapp2.2\Structure3TierDemo.Api.runtimeconfig.dev.json
+C:\source\scrap\Structure3TierDemo\src\Structure3TierDemo.Api\bin\Debug\netcoreapp2.2\Structure3TierDemo.Api.dll
+C:\source\scrap\Structure3TierDemo\src\Structure3TierDemo.Api\obj\Debug\netcoreapp2.2\Structure3TierDemo.Api.csprojAssemblyReference.cache
+C:\source\scrap\Structure3TierDemo\src\Structure3TierDemo.Api\obj\Debug\netcoreapp2.2\Structure3TierDemo.Api.csproj.CoreCompileInputs.cache
+C:\source\scrap\Structure3TierDemo\src\Structure3TierDemo.Api\obj\Debug\netcoreapp2.2\Structure3TierDemo.Api.RazorAssemblyInfo.cache
+C:\source\scrap\Structure3TierDemo\src\Structure3TierDemo.Api\obj\Debug\netcoreapp2.2\Structure3TierDemo.Api.RazorAssemblyInfo.cs
+C:\source\scrap\Structure3TierDemo\src\Structure3TierDemo.Api\obj\Debug\netcoreapp2.2\Structure3TierDemo.Api.AssemblyInfoInputs.cache
+C:\source\scrap\Structure3TierDemo\src\Structure3TierDemo.Api\obj\Debug\netcoreapp2.2\Structure3TierDemo.Api.AssemblyInfo.cs
+C:\source\scrap\Structure3TierDemo\src\Structure3TierDemo.Api\obj\Debug\netcoreapp2.2\Structure3TierDemo.Api.RazorTargetAssemblyInfo.cache
+C:\source\scrap\Structure3TierDemo\src\Structure3TierDemo.Api\bin\Debug\netcoreapp2.2\Structure3TierDemo.Api.pdb
+C:\source\scrap\Structure3TierDemo\src\Structure3TierDemo.Api\obj\Debug\netcoreapp2.2\Structure3TierDemo.Api.dll
+C:\source\scrap\Structure3TierDemo\src\Structure3TierDemo.Api\obj\Debug\netcoreapp2.2\Structure3TierDemo.Api.pdb
