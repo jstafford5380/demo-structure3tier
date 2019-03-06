@@ -3,9 +3,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Structure3TierDemo.Domain.BoundedContext1;
-using Structure3TierDemo.Domain.BoundedContext1.Service;
-using Structure3TierDemo.Infrastructure.Sql.BoundedContext1;
+using Structure3TierDemo.Api.Installers;
 
 namespace Structure3TierDemo.Api
 {
@@ -21,8 +19,9 @@ namespace Structure3TierDemo.Api
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddTransient<IDealWithFoo, FooService>();
-            services.AddTransient<IFooRepository, FooRepository>();
+            services.AddLogging();
+            services.AddDomainServices(Configuration);
+            services.AddAppConfigurations(Configuration);
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
