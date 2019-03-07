@@ -16,10 +16,11 @@ namespace Structure3TierDemo.Api
             Configuration = configuration;
         }
 
-
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddLogging();
+
+            // Example: follow installer pattern
             services.AddDomainServices(Configuration);
             services.AddAppConfigurations(Configuration);
 

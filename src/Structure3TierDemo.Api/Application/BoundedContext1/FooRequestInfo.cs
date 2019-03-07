@@ -2,6 +2,5 @@
 {
     public class FooRequestInfo
     {
-        public string Message { get; set; }
     }
 }

@@ -10,33 +10,35 @@ namespace Structure3TierDemo.Api.Application.BoundedContext1
     [Route("[controller]")]
     public class FooController : Controller
     {
-        private readonly IDealWithFoo _fooService;
+        private readonly IFooService _fooService;
         private readonly ILogger _logger;
-        private SampleConfig _sampleConfig;
+        private readonly SampleConfig _sampleConfig;
 
-        public FooController(IDealWithFoo fooService, IOptions<SampleConfig> sampleConfig, ILogger<FooController> logger)
+        public FooController(
+            IFooService fooService, 
+            IOptions<SampleConfig> sampleConfig, 
+            ILogger<FooController> logger)
         {
             _fooService = fooService;
             _logger = logger;
+
+            // Example: Use IOptions pattern
             _sampleConfig = sampleConfig.Value;
         }
 
-        [HttpPost, Route("")]
+        [HttpPost, Route("", Name = nameof(PostFoo))]
         public async Task<IActionResult> PostFoo([FromBody] FooRequestInfo request)
         {
-            _logger.LogCritical($"Inner value is: {_sampleConfig.Inner1.InnerProp}");
+            _logger.LogCritical($"Inner value to: {_sampleConfig.Inner1.InnerProp}");
 
             var result = await _fooService
-                .CreateFooAsync(request.Message)
+                .CreateFooAsync()
                 .ConfigureAwait(false);
 
-            var payload = new FooResponseInfo
-            {
-                Id = result.Id,
-                Message = result.Message
-            };
+            // Example: Mapping pattern for contracts
+            var payload = FooResponseInfo.FromDomain(result);
 
-            return Created($"/Foo/{payload.Id}", payload);
+            return Created($"/foo/{payload.Id}", payload);
         }
     }
 }

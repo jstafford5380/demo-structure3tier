@@ -5,6 +5,6 @@ namespace Structure3TierDemo.Domain.BoundedContext1
 {
     public interface IFooRepository
     {
-        Task CreateFooAsync(Foo foo);
+        Task<Foo> CreateFooAsync(Foo foo);
     }
 }

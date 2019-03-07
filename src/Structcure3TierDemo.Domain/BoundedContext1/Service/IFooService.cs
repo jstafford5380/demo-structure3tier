@@ -3,8 +3,8 @@ using Structure3TierDemo.Domain.BoundedContext1.Model;
 
 namespace Structure3TierDemo.Domain.BoundedContext1.Service
 {
-    public interface IDealWithFoo
+    public interface IFooService
     {
-        Task<Foo> CreateFooAsync(string value);
+        Task<Foo> CreateFooAsync();
     }
 }
